@@ -378,7 +378,9 @@ body {
 .item .name {
   font-size: 0.8rem;
   opacity: 0;
-  animation: showcontent 1s ease-in-out 1 forwards; }
+  animation: showcontent 1s ease-in-out 1 forwards; 
+  color: black;
+}
 
 @keyframes showcontent {
   from {
