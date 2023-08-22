@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- PRELOAD -->
+    <link rel="preload" as="image" href="images/background.png" />
+    <!--- FONTS BEBAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+
+
+
+<body class="no-show">
+    <!------------------------------------ PRE LOADING ----------------------------------------------->
+
+    <section class="loading-page">
+        <div class="counter">
+            <h1>0%</h1>
+            <hr>
+        </div>
+    </section>
+
+    <!------------------------------------ NAVBAR ----------------------------------------------->
+    <nav class="tab">
+
+        <ul class="tab__items">
+
+            <li class="tab__item tab__item--active">
+                <a href="#about">
+                    <p class="tab__title">ABOUT</p>
+                </a>
+            </li>
+          
+            <li class="tab__item">
+                <a href="#fathers">
+                    <p class="tab__title">BROTHERS</p>
+                </a>
+            </li>
+
+            <li class="tab__item, tab__logo__item">
+                <a href="#background">
+                    <img class="tab__icon, tab__logo__icon" id="logo-icon" src="images/icons/logo.svg" />
+                </a>
+            </li>
+
+            <li class="tab__item">
+                <a href="#questions">
+                    <p class="tab__title">QUESTIONS</p>
+                </a>
+            </li>
+
+            <li class="tab__item">
+                <a href="#recruitment">
+                    <p class="tab__title">EVENTS</p>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    
+
+    <!------------------------------------ ARROW ----------------------------------------------->
+
+    <div class="arrow animated bounce"></div>
+
+    
+    <!------------------------------------ BACKGROUND ----------------------------------------------->
+
+    <section class="background">
+
+        <video id="background-video-mobile" autoplay loop muted poster="images/logo.mp4">
+            <source src="images/background/logo.mp4" type="video/mp4">
+        </video>
+    
+        <video id="background-video" autoplay loop muted poster="images/logo.mp4">
+            <source src="images/background/logo2.mp4" type="video/mp4">
+        </video>
+
+    </section>
+
+
+    <!------------------------------------ WELCOME ----------------------------------------------->
+
+    <section class="welcome"></section>
+
+
+    <!------------------------------------ ABOUT US ----------------------------------------------->
+
+    <section class="about">
+
+        <h1>ABOUT US</h1>
+        <div class="box">
+
+            <div class="box1">
+                <p>Our mission as an Asian Interest Fraternity is to provide a supportive and inclusive
+                    brotherhood that empowers our members to develop leadership skills, academic excellence, and
+                    a strong sense of cultural identity. We strive to create a welcoming and inclusive environment
+                    that fosters personal growth, professional development, and community engagement.</p>
+            </div>
+
+            <div class="box2">
+                <p>We aim to promote the values and traditions of Asian cultures, while also addressing the challenges and
+                    opportunities facing Asian communities today. We seek to cultivate a sense of pride and
+                    awareness of our cultural heritage, as well as a sense of responsibility to give back to our
+                    community and support those in need.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!------------------------------------ VALUES ---------------------------------------------->
+
+    <section class="values">
+
+        <h1>4 PILLARS</h1>
+        <div class="wrapper">
+
+            <div class="pillars">
+                <div class="pillar pillar1"></div>
+                <div class="pillar pillar2"></div>
+                <div class="pillar pillar3"></div>
+                <div class="pillar pillar4"></div>
+                <div class="mask"></div>
+            </div>
+            
+        </div>
+
+        <div class="pillar_list">
+            <ul>
+                <li class="pillar1">BROTHERHOOD</li>
+                <li class="pillar2">SCHOLARSHIP</li>
+                <li class="pillar3">LEADERSHIP</li>
+                <li class="pillar4">SERVICE</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!------------------------------------ FOUNDING FATHERS ----------------------------------------------->
+
+    <section class="fathers">
+
+        <h1>FOUNDING FATHERS</h1>
+        
+        <div class="container">
+            <div id="slide">
+
+                <div class="item" style="background-image: url(images/foundingFathers/Kim.jpg);">
+                    <div class="content">
+                        <div class="name">Eric Kim</div>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(images/foundingFathers/Pham.jpg);">
+                    <div class="content">
+                        <div class="name">Eric Pham</div>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(images/foundingFathers/Ilano.jpg);">
+                    <div class="content">
+                        <div class="name">Jerick Ilano</div>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(images/foundingFathers/Nguyen.jpg);">
+                    <div class="content">
+                        <div class="name">Thomas Nguyen</div>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(images/background.png);">
+                    <div class="content">
+                        <div class="name">Anthony Liu</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="list1">
+                <ul>
+                    <li>Eric Kim</li>
+                    <li>Eric Pham</li>
+                    <li>Jerick Ilano</li>
+                </ul>
+            </div>
+        
+            <div class="list2">
+                <ul>
+                    <li>Thomas Nguyen</li>
+                    <li>Anthony Liu</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!------------------------------------ QUESTIONS ----------------------------------------------->
+
+    <section class="questions">
+
+        <h1>QUESTIONS</h1>
+
+        <!-- The Timeline -->
+        <ul class="timeline">
+
+            <!-- Item 1 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Why rush?</span>
+                    </div>
+                    <div class="desc">Why not, free food!!! It is simply a time for you to meet and chill with the brothers before school starts.</div>
+                </div>
+            </li>
+        
+            <!-- Item 2 -->
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">What are the benefits?</span>
+                    </div>
+                    <div class="desc">What you are looking for in college: friendships, memories, networks, career counseling, ... and friendships. Brothers got you!</div>
+                </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Do I have to be asian?</span>
+                    </div>
+                    <div class="desc">Do you? Definitely not, everyone is welcome. We are looking forward to embrace diversity.</div>
+                </div>
+            </li>
+
+            <!-- Item 4 -->
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">What is the process like?</span>
+                    </div>
+                    <div class="desc">Rushees would get a bid at the end of rush if the brothers see the kenergy in them. It is also completely non-committal.</div>
+                </div>
+            </li>
+        
+        </ul>
+    </section>
+
+    <!------------------------------------SOJU----------------------------------------------->
+
+    <section class="soju"></section>
+
+    <!------------------------------------RECRUITMENT----------------------------------------------->
+
+    <section class="recruitment">
+        <h1>RECRUITMENT</h1>
+        <div class="box">
+            <p>Follow us on Instagram for latest updates on rush events!</p>
+            <a href="https://www.instagram.com/deltapizeta/">
+                <img class="instagram__icon" src="images/icons/instagram.svg" />
+            </a>
+        </div>
+    </section>
+
+    <!------------------------------------ FOOTER ----------------------------------------------->
+
+    <footer>
+        <p id="frat_name">© 2023 Delta Pi Zeta Fraternity</p>
+        <p>All logos and brand names are registered trademarks of their respective companies.</p>
+        <p id="designer">Designed by <u>Eric Chung</u></p>
+    </footer>
+
+    <!------------------------------------ SCRIPT ----------------------------------------------->
+    <script src="main.js"></script>
+</body>
+</html>
